@@ -1,0 +1,12 @@
+{
+  "name": "kite",
+  "version": "0.0.1",
+  "private": true,
+  "description": "control a drone with leap motion like a kite",
+  "dependencies": {
+      "cylon": "^1.2.0",
+      "cylon-rolling-spider": "^1.2.0",
+      "cylon-leapmotion": "^0.20.0",
+      "node-slack": "^0.0.6"
+  }
+}
