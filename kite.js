@@ -5,14 +5,15 @@ var Cylon = require('cylon'),
 Cylon.robot({
     connections: {
         'leapmotion' : { adaptor: 'leapmotion'},
-        'rolling-spider': { adaptor: 'rolling-spider' }
+        'rolling-spider': { adaptor: 'rolling-spider', uuid: 'UUID OF YOUR OWN' }
     },
     devices: {
         leapmotion: { driver: 'leapmotion', connection: 'leapmotion'},
-        drone: { driver: 'rolling-spider' }
+        drone: { driver: 'rolling-spider' , connection: 'rolling-spider'}
     },
 
     work: function (my) {
+		console.log("test");
 
         my.leapmotion.on('frame', function(frame){
             if(frame.hands.length > 0){
